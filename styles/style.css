@@ -6,6 +6,51 @@
     font-family: 'Alexandria', sans-serif;
 }
 
+/*dani - parte rafa*/
+
+
+.titulo {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.equipe_texto {
+    margin: 20px 0 100px;
+    text-align: justify;
+    padding: 0 100px 0 100px;
+    text-indent: 100px;
+}
+
+
+.imagemOnixx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.secao_equipe {
+    padding: 50px 20px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.imgEquipe {
+    width: 100%;
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
 /* Rafael */
 
 .centraliza {
@@ -13,7 +58,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
 }
 
 .container {
@@ -33,6 +77,7 @@
     justify-content: center;
     position: relative;
     z-index: 0;
+    box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
 }
 
 .orangecircle {
@@ -157,4 +202,15 @@ ul {
 .textocard {
     margin: 50px;
     margin-top: 0px;
+}
+
+
+@media (width < 468px) {
+ 
+    .equipe_texto {
+        margin: 20px 0 50px;
+        text-align: justify;
+        padding: 0 10px 0 10px;
+        text-indent: 60px;
+    }
 }
