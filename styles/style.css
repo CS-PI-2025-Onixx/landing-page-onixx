@@ -152,6 +152,7 @@
     position: absolute;
     right: 32vh;
     cursor: pointer;
+    left: 1vh;
 }
 
 ul {
@@ -176,6 +177,11 @@ ul {
 .redes img {
     width: 2vh;
     height: 2vh;
+    margin-top: 5px;
+}
+
+.redes .x {
+    margin-bottom: 40px;
 }
 
 .nome {
