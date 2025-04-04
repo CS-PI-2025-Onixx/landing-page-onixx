@@ -39,7 +39,7 @@
 }
 
 .plano_cartao h4 {
-    margin-bottom   : 10px;
+    margin-bottom: 10px;
     font-size: 25px;
 }
 
@@ -67,6 +67,24 @@
     cursor: pointer;
 }
 
+.plano_agendar a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.plano_funcionalidade {
+    margin-top: 20px;
+}
+
+.plano_funcionalidade span {
+    display: block;
+    padding-top: 9px;
+}
+
+.plano_funcionalidade i {
+    margin-right: 10px;
+}
+
 .plano_aviso {
     margin-top: 50px;
     text-align: center;
@@ -76,3 +94,15 @@
     margin: 0 100px 0 100px;
 }
 
+.ri-checkbox-circle-fill {
+    color: #169D06;
+}
+
+.ri-close-circle-fill {
+    color: #BE0105;
+}
+
+.ri-alert-fill {
+    color: #DFA700;
+    font-size: 30px;
+}
