@@ -6,7 +6,6 @@
     font-family: 'Alexandria', sans-serif;
 }
 
-/*Dani*/
 .titulo {
     margin-bottom: 30px;
     font-size: 30px;
@@ -14,6 +13,212 @@
     text-align: center;
 }
 
+
+
+.equipe_texto {
+    margin: 20px 0 100px;
+    text-align: justify;
+    padding: 0 100px 0 100px;
+    text-indent: 100px;
+}
+
+
+.imagemOnixx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.imagemOnixx img {
+    width: 100%;
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.secao_equipe {
+    padding: 50px 20px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Rafael */
+
+.centraliza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #D9D9D9;
+    padding: 2vh;
+    overflow: hidden;
+    height: 55vh;
+    width: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
+}
+
+.orangecircle {
+    width: 96vh;
+    height: 95vh;
+    top: 7vh;
+    border-radius: 50%;
+    border-width: 7vh;
+    border-color: #9D4D06;
+    position: absolute;
+    right: -34vh;
+    z-index: 2;
+    border-style: solid;
+}
+
+.blackcircle {
+    width: 90vh;
+    height: 130vh;
+    top: 8.5vh;
+    border-radius: 50%;
+    border-width: 5vh;
+    border-color: #494848;
+    position: absolute;
+    right: -30vh;
+    z-index: 1;
+    border-style: solid;
+}
+
+.white {
+    width: 110vh;
+    height: 100vh;
+    top: 52vh;
+    border-radius: 50%;
+    border-width: 5vh;
+    border-color: #9D4D06;
+    position: absolute;
+    z-index: 1;
+    border-style: solid;
+}
+
+.imagem {
+    background-color: aliceblue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 2vh;
+    border-width: 1vh;
+    border-style: solid;
+    border-color: #D9D9D9;
+    width: 20vh;
+    height: 20vh;
+    position: absolute;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.sociais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    top: 1vh;
+    position: absolute;
+    right: 32vh;
+    cursor: pointer;
+    left: 1vh;
+}
+
+ul {
+    list-style: none;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5vh;
+    height: 2.5vh;
+    border-radius: 5px;
+    border: 1px solid #9D4D06;
+    background: rgba(157, 77, 6, 0.37);
+}
+
+.redes:hover {
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+.redes img {
+    width: 2vh;
+    height: 2vh;
+    margin-top: 5px;
+}
+
+.redes .x {
+    margin-bottom: 40px;
+}
+
+.nome {
+    text-align: center;
+    position: absolute;
+    top: 25vh;
+    z-index: 100;
+    font-family: "Alexandria", sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nome h5 {
+    font-weight: 400;
+}
+
+.nome p {
+    margin-top: 8vh;
+    width: 100%;
+}
+
+.textocard {
+    margin: 50px;
+    margin-top: 0px;
+}
+
+
+@media (width < 468px) {
+ 
+    .equipe_texto {
+        margin: 20px 0 50px;
+        text-align: justify;
+        padding: 0 10px 0 10px;
+        text-indent: 60px;
+    }
+
+  
 /****************** SEÇÃO PLANO E PREÇO ******************/
 .secao_plano {
     padding: 50px 20px;
