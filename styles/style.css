@@ -223,17 +223,17 @@ footer h3 {
     padding: 5px;
 }
 
-.links_rodape {
+.links-rodape {
     cursor: pointer;
     color: #ffffff;
 }
 
-.links_rodape a {
+.links-rodape a {
     color: #ffffff;
     text-decoration: none;
 }
 
-.links_rodape a:hover {
+.links-rodape a:hover {
     color: #9D4D06;
 }
 
