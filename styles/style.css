@@ -208,9 +208,38 @@ ul {
     margin-top: 0px;
 }
 
+/****************** SEÇÃO Rodapé******************/
+footer {
+    background-color: #171717;
+    color: #ffffff;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+
+}
+
+footer h3 {
+    padding: 5px;
+}
+
+.links_rodape {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.links_rodape a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.links_rodape a:hover {
+    color: #9D4D06;
+}
+
 
 @media (width < 468px) {
- 
+
     .equipe_texto {
         margin: 20px 0 50px;
         text-align: justify;
@@ -219,6 +248,7 @@ ul {
     }
 
 }
+
 /****************** SEÇÃO PLANO E PREÇO ******************/
 .secao_plano {
     padding: 50px 20px;
