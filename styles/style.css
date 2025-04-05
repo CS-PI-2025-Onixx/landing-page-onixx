@@ -6,90 +6,207 @@
     font-family: 'Alexandria', sans-serif;
 }
 
-.background-header {
+@media (min-width: 756px){
+    .background-header {
     position: absolute;
     width: 100%;
     z-index: -1;
     object-fit: cover;
-}
+    }
 
-header {
-    position: relative;
-    z-index: 1;
-    color: white;
-}
-
-.container-header{
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.logo-e-menu {
-    display: flex;
-    align-items: center;
-    padding-top: 20px;
-}
-
-.logo-header {
-    width: 100px;
-    height: 100px;
-
-}
-
-.menu-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding-left: 55%;
-    font-size: 0.7em;
-}
-
-.menu-header h2{
-    cursor: pointer;
-}
-
-.menu-header h2:hover{
-    border-bottom: #9D4D06 3px solid;
-}
-
-.texto-imagem-header {
-    padding-top: 15%;
-    /* atencao */
-    padding-right: 40%;
-    text-align: justify;
-    text-wrap: wrap;
-}
-
-.texto-imagem-header h1{
+    header {
+        position: relative;
+        z-index: 1;
+        color: white;
+    }   
+    .logo-e-menu {
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+        }
+        
+        .logo-header {
+            width: 100px;
+            height: 100px;
+            
+            }
+            
+        .menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding-left: 55%;
+            font-size: 0.7em;
+        }
+            
+        .menu-header h2{
+            cursor: pointer;
+        }
+                
+        .menu-header h2:hover{
+            border-bottom: #9D4D06 3px solid;
+        }
+                    
+        .texto-imagem-header {
+            padding-top: 15%;
+            padding-right: 40%;
+            text-align: justify;
+            text-wrap: wrap;
+        }
+                        
+        .texto-imagem-header h1{
             font-size: 3.7em;
             font-weight: 900;
             margin-top: 25px;
             margin-bottom: 25px;
-}
-
-.texto-imagem-header h2{
+        }
+                            
+        .texto-imagem-header h2{
         font-size: 2.2em;
         font-weight: 150;
-}
+        }
 
-.texto-imagem-header p{
+        .texto-imagem-header p{
         font-size: 1.6em;
         font-weight: 400;
         padding-right: 27%;
         margin-bottom: 35px;
+        }
+
+        .botao-header button{
+        background-color: #9D4D06;
+        padding: 30px;
+        border-radius: 20px;
+        color: white;
+        font-size: 1.2em;
+        border: none;
+        }
+
+        .botao-header button:hover{
+        background-color: #cc650b;
+        cursor: pointer;
+        }
+
+        .background-header-mobile{
+        display: none;
+        }
 }
 
-.botao-header button{
-    background-color: #9D4D06;
-    padding: 30px;
-    border-radius: 20px;
-    color: white;
-    font-size: 1.2em;
-    border: none;
-}
+@media (max-width: 556px){
+    .background-header {
+        display: none;
+        }
 
-.botao-header button:hover{
-    background-color: #cc650b;
-    cursor: pointer;
+    .background-header-mobile{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        object-fit: cover;
+    }
+
+    .container-header {
+        position: relative;
+        z-index: 1;
+        color: white;
+    }
+    .container-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .container-header {
+        padding-left: auto;
+        padding-right: auto;
+    }
+/*
+O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
+    .logo-e-menu {
+        display: flex;
+        align-items: normal;
+        padding-top: auto;
+    }
+*/
+    .logo-header {
+        width: 14vw;
+        height: 14vw;
+        padding-top: 6%;
+    }
+
+    .menu-header {
+        width: 100%;
+        list-style: none;
+    }
+
+    .menu-lis{
+        padding: 1.7em 1em;
+
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        font-size: 1em;
+        justify-content: space-between;
+        font-weight: 330;
+    }
+
+    .menu-header a {
+        display: flex;
+        text-decoration: none;
+        color: white;
+    }
+
+    .menu-header a:hover {
+        border-bottom: none;
+    }
+    .texto-imagem-header {
+        text-align: justify;
+        text-wrap: wrap;
+        padding: 1.8em 2em;
+        text-align: center;
+        }
+        
+    .texto-imagem-header h1 {
+        font-size: 2.2em;
+        font-weight: 600;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        padding: 0 2em;
+        }
+            
+    .texto-imagem-header h2 {
+        font-size: 1.4em;
+        font-weight: 150;
+        }
+        
+    .texto-imagem-header p {
+        font-size: 1em;
+        font-weight: 350;
+        text-align: justify;
+        }
+
+    .botao-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .botao-header button {
+        background-color: #9D4D06;
+        padding: 1.5em 0.7em;
+        border-radius: 0.7em;
+        color: white;
+        border: none;
+
+        font-size: 1em;
+        font-weight: 350;
+        }
+            
+            
+    .botao-header button:hover {
+        background-color: #cc650b;
+        cursor: pointer;
+    }
+
 }
