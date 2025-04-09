@@ -313,7 +313,7 @@ ul {
 }
 
 
-/****************** SEÇÃO PLANO E PREÇO ******************/
+/****************** SEÇÃO FAQ ******************/
 .secao_faq {
     padding: 50px 20px;
     background-color: #F5F5F5;
@@ -322,4 +322,28 @@ ul {
 .faq_subtitulo {
     text-align: center;
     margin-bottom: 25px;
+}
+
+.faq {
+    margin: 20px 50px
+}
+
+.faq-item {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #494848;
+}
+
+.faq-item h4 {
+    font-weight: normal;
+}
+
+.faq-item p {
+    display: none;
+    margin-top: 10px;
+}
+
+.faq-item.active p {
+    display: block;
 }
