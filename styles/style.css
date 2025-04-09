@@ -210,7 +210,7 @@ ul {
 
 
 @media (width < 468px) {
- 
+
     .equipe_texto {
         margin: 20px 0 50px;
         text-align: justify;
@@ -219,6 +219,7 @@ ul {
     }
 
 }
+
 /****************** SEÇÃO PLANO E PREÇO ******************/
 .secao_plano {
     padding: 50px 20px;
@@ -295,10 +296,6 @@ ul {
     text-align: center;
 }
 
-.plano_aviso p {
-    margin: 0 100px 0 100px;
-}
-
 .ri-checkbox-circle-fill {
     color: #169D06;
 }
@@ -324,12 +321,10 @@ ul {
     margin-bottom: 25px;
 }
 
-.faq {
-    margin: 20px 50px
-}
-
 .faq-item {
-    margin: 10px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 15px;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 2px 5px #494848;
@@ -342,6 +337,7 @@ ul {
 .faq-item p {
     display: none;
     margin-top: 10px;
+    font-weight: 300;
 }
 
 .faq-item.active p {
