@@ -247,6 +247,25 @@ footer h3 {
         text-indent: 60px;
     }
 
+    .sociais {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+        top: 1vh;
+        position: absolute;
+        right: 32vh;
+        cursor: pointer;
+        left: 7vh;
+    }
+
+    .redes img {
+        width: 3vh;
+        height: 2vh;
+        margin-top: 5px;
+    }
+
 }
 
 /****************** SEÇÃO PLANO E PREÇO ******************/
