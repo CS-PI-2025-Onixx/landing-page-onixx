@@ -9,13 +9,27 @@ fetch('json/faq.json')
 
             const pergunta = document.createElement('h4');
             pergunta.textContent = faq.pergunta;
-            pergunta.addEventListener('click', () =>{
+
+            const icon = document.createElement('i');
+            icon.classList.add('ri-arrow-down-s-line');
+
+            pergunta.addEventListener('click', () => {
                 faqItem.classList.toggle('active');
-            })
+
+                if (faqItem.classList.contains('active')) {
+                    icon.classList.remove('ri-arrow-down-s-line');
+                    icon.classList.add('ri-arrow-up-s-line'); 
+                } else {
+                    icon.classList.remove('ri-arrow-up-s-line');
+                    icon.classList.add('ri-arrow-down-s-line');
+                }
+            });
+
+            pergunta.appendChild(icon);
 
             const resposta = document.createElement('p');
             resposta.textContent = faq.resposta;
-            
+
             faqItem.appendChild(pergunta);
             faqItem.appendChild(resposta);
             faqContainer.appendChild(faqItem);

@@ -332,6 +332,15 @@ ul {
 
 .faq-item h4 {
     font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-item i {
+    margin-left: 10px;
+    font-size: 20px;
 }
 
 .faq-item p {
