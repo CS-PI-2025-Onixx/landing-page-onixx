@@ -10,11 +10,11 @@
     .background-header {
         position: absolute;
         width: 100%;
+        height: 100vh;
         z-index: -100;
         object-fit: cover;
     }
-    .container-header {
-        background-color: "red";
+    .container-header { 
         padding: 2% 5% 0 5%;
     }
 
@@ -51,7 +51,6 @@
 
     .menu-header a:hover {
         border-bottom: #9D4D06 2.7px solid;
-        transition: 0.3s ease-in-out;
     }
 
     .container-logo {
@@ -91,6 +90,7 @@
     .botao-header button{
     background-color: #9D4D06;
     padding: 30px;
+    margin-top: 2em;
     border-radius: 20px;
     color: white;
     font-size: 1.2em;
@@ -228,8 +228,15 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
 /*SOLUÇÃO*/
 
 .secao-solucao {
-    padding: 50px 20px;
+    padding: 0 5%;
     background-color: #F5F5F5;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: 500;
+    margin: 1em 0;
 }
 
 .solucao-grade {
