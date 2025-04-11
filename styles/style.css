@@ -6,23 +6,24 @@
     font-family: 'Alexandria', sans-serif;
 }
 
-@media (min-width: 756px){
-    .background-header {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        z-index: -100;
-        object-fit: cover;
-    }
-    .container-header { 
+@media (min-width: 756px) {
+
+    .container-header {
+        position: relative;
+        z-index: 1;
+        color: white;
         padding: 2% 5% 0 5%;
+        background-image: url('../assets/img/img-home.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     header {
         position: relative;
         z-index: 1;
         color: white;
-    }   
+    }
 
     .logo-e-menu {
         display: flex;
@@ -228,7 +229,7 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
 /*SOLUÇÃO*/
 
 .secao-solucao {
-    padding: 0 5%;
+    padding-bottom: 5%;
     background-color: #F5F5F5;
 }
 
@@ -236,7 +237,7 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
     text-align: center;
     font-size: 1.9em;
     font-weight: 500;
-    margin: 1em 0;
+    padding: 1em 0;
 }
 
 .solucao-grade {
