@@ -1,3 +1,5 @@
+
+/*************************Mardar WhatsApp***********************************/
 function sendWhatsApp() {
     console.log("entrou")
     const nome = document.getElementById('nome').value;
@@ -8,13 +10,15 @@ function sendWhatsApp() {
     const whatsappUrl = `https://api.whatsapp.com/send?phone=554499907886&text=${encodeURIComponent(mensagem)}`;
     window.open(whatsappUrl, '_blank');
 }
+/*************************Mardar WhatsApp***********************************/
 
 
 
 
+/*************************Mardar email***********************************/
 
 function sendEmail() {
-    event.preventDefault(); 
+    event.preventDefault();
     const nome = document.getElementById('nome').value;
     const email = document.getElementById('email').value;
     const telefone = document.getElementById('telefone').value;
@@ -54,3 +58,36 @@ function sendEmail() {
         });
 
 }
+/*************************Mardar email***********************************/
+
+
+/*************************mascara telefone***********************************/
+document.addEventListener("DOMContentLoaded", function () {
+    const campoTelefone = document.getElementById("telefone");
+
+    if (campoTelefone) {
+        campoTelefone.addEventListener("input", function (evento) {
+            let campo = evento.target;
+
+            let numerosDigitados = campo.value.replace(/\D/g, '');
+            let numerosLimitados = numerosDigitados.substring(0, 11);
+
+            let telefoneFormatado = '';
+
+            if (numerosLimitados.length > 0) {
+                telefoneFormatado += '(' + numerosLimitados.substring(0, 2);
+            }
+            if (numerosLimitados.length >= 3) {
+                telefoneFormatado += ') ' + numerosLimitados.substring(2, 7);
+            }
+            if (numerosLimitados.length >= 8) {
+                telefoneFormatado += '-' + numerosLimitados.substring(7, 11);
+            }
+
+            campo.value = telefoneFormatado;
+        });
+    }
+});
+/*************************mascara telefone***********************************/
+
+
