@@ -369,6 +369,11 @@ input {
 
 }
 
+input:focus {
+    outline: none;
+    border-color: #9D4D06;
+}
+
 @media (width < 800px) {
     .formulario_grade {
         display: flex;
@@ -404,9 +409,7 @@ input {
         text-align: center;
     }
 
-    .input:focus {
-        border-color: #9D4D06;
-    }
+
 
 
 }
