@@ -221,12 +221,12 @@ ul {
 }
 
 /****************** SEÇÃO PLANO E PREÇO ******************/
-.secao_plano {
+.secao-plano {
     padding: 50px 20px;
     background-color: #D9D9D9;
 }
 
-.plano_grade {
+.plano-grade {
     margin-top: 20px;
     display: grid;
     gap: 60px;
@@ -238,31 +238,31 @@ ul {
     margin-right: auto;
 }
 
-.plano_cartao {
+.plano-cartao {
     padding: 30px 25px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px #4f4e4e;
 }
 
-.plano_cartao h4 {
+.plano-cartao h4 {
     margin-bottom: 10px;
     font-size: 25px;
 }
 
 
 
-.plano_preco {
+.plano-preco {
     margin-top: 25px;
     font-size: 25px;
 }
 
-.plano_agendar {
+.plano-agendar {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.plano_agendar button {
+.plano-agendar button {
     background-color: #9D4D06;
     color: #ffffff;
     border: none;
@@ -273,25 +273,25 @@ ul {
     cursor: pointer;
 }
 
-.plano_agendar a {
+.plano-agendar a {
     text-decoration: none;
     color: #ffffff;
 }
 
-.plano_funcionalidade {
+.plano-funcionalidade {
     margin-top: 20px;
 }
 
-.plano_funcionalidade span {
+.plano-funcionalidade span {
     display: block;
     padding-top: 9px;
 }
 
-.plano_funcionalidade i {
+.plano-funcionalidade i {
     margin-right: 10px;
 }
 
-.plano_aviso {
+.plano-aviso {
     margin-top: 50px;
     text-align: center;
 }
@@ -311,12 +311,12 @@ ul {
 
 
 /****************** SEÇÃO FAQ ******************/
-.secao_faq {
+.secao-faq {
     padding: 50px 20px;
     background-color: #F5F5F5;
 }
 
-.faq_subtitulo {
+.faq-subtitulo {
     text-align: center;
     margin-bottom: 25px;
 }
