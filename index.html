@@ -427,21 +427,21 @@
                         <h2>Agende uma demonstração</h2>
                         <p style="text-indent: 40px;">Informe seus dados que entraremos em contato.</p>
                         <label for="nome">Nome<span style="color: #FF0000;">*</span></label>
-                        <input type="text" id="nome" name="nome" class="input" required value="zeze">
+                        <input type="text" id="nome" name="nome" class="input" required aria-label="Nome completo">
                         <label for="email">Email<span style="color: #FF0000;">*</span></label>
-                        <input type="email" id="email" name="email" class="input" required value="email@gmail.com">
+                        <input type="email" id="email" name="email" class="input" required aria-label="Endereço de email">
                         <label for="Telefone">Telefone</label>
-                        <input type="Telefone" id="telefone" name="Telefone" class="input">
+                        <input type="Telefone" id="telefone" name="Telefone" class="input" aria-label="Número de telefone">
                         <label for="nome">Nome da empresa<span style="color: #FF0000;">*</span></label>
-                        <input type="text" id="nome_empresa" name="nome_empresa" class="input" required value="pmoneoj">
+                        <input type="text" id="nome_empresa" name="nome_empresa" class="input" required aria-label="Nome da empresa">
                         <p style="font-size: 13px;">Os campos marcados com <span style="color: #FF0000;">*</span> são
                             obrigatorios.</p>
 
 
-                        <button onclick="sendEmail()" class="email-button">
+                        <button onclick="sendEmail()" class="email-button" aria-label="Enviar email com os dados preenchidos">
                             Enviar email
                         </button>
-                        <button onclick="sendWhatsApp()" class="whatsapp-button">
+                        <button onclick="sendWhatsApp()" class="whatsapp-button"aria-label="Enviar dados pelo WhatsApp">
                             <i class="ri-whatsapp-line" style="color: #ffffff"></i> Enviar WhatsApp
                         </button>
 
