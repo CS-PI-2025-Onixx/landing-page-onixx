@@ -456,6 +456,7 @@ ul {
     margin: 50px;
     margin-top: 0px;
 }
+
 @media (width < 468px) {
 
     .equipe-texto {
@@ -477,7 +478,7 @@ ul {
 
 }
 
-@media (width < 376px){
+@media (width < 376px) {
     .nome p {
         margin-top: 4vh;
         width: 100%;
@@ -516,13 +517,44 @@ footer h3 {
     color: #9D4D06;
 }
 
-/****************** SEÇÃO PLANO E PREÇO ******************/
-.secao_plano {
+
+@media (width < 468px) {
+
+    .equipe_texto {
+        margin: 20px 0 50px;
+        text-align: justify;
+        padding: 0 10px 0 10px;
+        text-indent: 60px;
+    }
+
+    .sociais {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+        top: 1vh;
+        position: absolute;
+        right: 32vh;
+        cursor: pointer;
+        left: 7vh;
+    }
+
+    .redes img {
+        width: 3vh;
+        height: 2vh;
+        margin-top: 5px;
+    }
+
+}
+
+/****************** SEÇÃO E PREÇO ******************/
+.secao-plano {
     padding: 50px 20px;
     background-color: #D9D9D9;
 }
 
-.plano_grade {
+.plano-grade {
     margin-top: 20px;
     display: grid;
     gap: 60px;
@@ -538,17 +570,16 @@ footer h3 {
 
 .solucao-cartao {
     padding: 30px 25px;
-
     border-radius: 10px;
     box-shadow: 2px 2px 10px #4f4e4e;
 }
 
-.plano_cartao {
+.plano-cartao {
     padding: 30px 25px;
-
     border-radius: 10px;
     box-shadow: 2px 2px 10px #4f4e4e;
 }
+
 
 .solucao-cartao span {
     display: inline-block;
@@ -562,25 +593,25 @@ footer h3 {
     font-weight: 700;
 }
 
-.plano_cartao h4 {
+.plano-cartao h4 {
     margin-bottom: 10px;
     font-size: 25px;
 }
 
 
 
-.plano_preco {
+.plano-preco {
     margin-top: 25px;
     font-size: 25px;
 }
 
-.plano_agendar {
+.plano-agendar {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.plano_agendar button {
+.plano-agendar button {
     background-color: #9D4D06;
     color: #ffffff;
     border: none;
@@ -591,31 +622,27 @@ footer h3 {
     cursor: pointer;
 }
 
-.plano_agendar a {
+.plano-agendar a {
     text-decoration: none;
     color: #ffffff;
 }
 
-.plano_funcionalidade {
+.plano-funcionalidade {
     margin-top: 20px;
 }
 
-.plano_funcionalidade span {
+.plano-funcionalidade span {
     display: block;
     padding-top: 9px;
 }
 
-.plano_funcionalidade i {
+.plano-funcionalidade i {
     margin-right: 10px;
 }
 
-.plano_aviso {
+.plano-aviso {
     margin-top: 50px;
     text-align: center;
-}
-
-.plano_aviso p {
-    margin: 0 100px 0 100px;
 }
 
 .ri-checkbox-circle-fill {
@@ -630,4 +657,48 @@ footer h3 {
     color: #DFA700;
     font-size: 30px;
 
+}
+
+
+/****************** SEÇÃO FAQ ******************/
+.secao-faq {
+    padding: 50px 20px;
+    background-color: #F5F5F5;
+}
+
+.faq-subtitulo {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.faq-item {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #494848;
+}
+
+.faq-item h4 {
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-item i {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.faq-item p {
+    display: none;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.faq-item.active p {
+    display: block;
 }
