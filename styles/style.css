@@ -255,7 +255,7 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
     align-items: center;
 }
 
-.titulo {
+.titulo-equipe {
     margin-bottom: 30px;
     font-size: 30px;
     font-weight: 700;
@@ -264,7 +264,7 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
 
 
 
-.equipe_texto {
+.equipe-texto {
     margin: 20px 0 100px;
     text-align: justify;
     padding: 0 100px 0 100px;
@@ -272,14 +272,14 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
 }
 
 
-.imagemOnixx {
+.imagem-onixx {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.imagemOnixx img {
+.imagem-onixx img {
     width: 100%;
     max-width: 100px;
     display: block;
@@ -287,7 +287,7 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
 }
 
 
-.secao_equipe {
+.secao-equipe {
     padding: 50px 20px;
     background-color: #D9D9D9;
     display: flex;
@@ -327,7 +327,7 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
     box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
 }
 
-.orangecircle {
+.circulo-laranja {
     width: 96vh;
     height: 95vh;
     top: 7vh;
@@ -340,7 +340,7 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
     border-style: solid;
 }
 
-.blackcircle {
+.circulo-preto {
     width: 90vh;
     height: 130vh;
     top: 8.5vh;
@@ -353,7 +353,7 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
     border-style: solid;
 }
 
-.white {
+.branco {
     width: 110vh;
     height: 100vh;
     top: 52vh;
@@ -365,7 +365,7 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
     border-style: solid;
 }
 
-.imagem {
+.imagem-perfil {
     background-color: aliceblue;
     border-radius: 50%;
     display: flex;
@@ -382,7 +382,7 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
     overflow: hidden;
 }
 
-.imagem img {
+.imagem-perfil img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -452,9 +452,41 @@ ul {
     width: 100%;
 }
 
-.textocard {
+.texto-card {
     margin: 50px;
     margin-top: 0px;
+}
+
+@media (width < 468px) {
+
+    .equipe-texto {
+        margin: 20px 0 50px;
+        text-align: justify;
+        padding: 0 10px 0 10px;
+        text-indent: 60px;
+    }
+
+    .sociais {
+        left: 7vh;
+    }
+
+    .redes img {
+        width: 3vh;
+        height: 2vh;
+        margin-top: 5px;
+    }
+
+}
+
+@media (width < 376px) {
+    .nome p {
+        margin-top: 4vh;
+        width: 100%;
+    }
+
+    .sociais {
+        left: 1vh;
+    }
 }
 
 /****************** SEÇÃO Rodapé******************/
@@ -516,8 +548,7 @@ footer h3 {
 
 }
 
-/****************** SEÇÃO 
-E PREÇO ******************/
+/****************** SEÇÃO E PREÇO ******************/
 .secao-plano {
     padding: 50px 20px;
     background-color: #D9D9D9;
