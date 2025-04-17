@@ -41,7 +41,7 @@
         text-decoration: none;
         display: flex;
         font-size: 0.85em;
-        justify-content: space-between;
+        justify-content: right;
         font-weight: 380;
     }
 
@@ -49,6 +49,7 @@
         display: flex;
         text-decoration: none;
         color: white;
+        margin-left: 4em;
     }
 
     .menu-header a:hover {
@@ -56,7 +57,7 @@
     }
 
     .container-logo {
-        padding-right: 25%;
+        padding-right: auto;
     }
 
     .logo-header {
