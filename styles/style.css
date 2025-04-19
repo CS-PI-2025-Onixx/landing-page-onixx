@@ -517,6 +517,186 @@ footer h3 {
     color: #9D4D06;
 }
 
+/****************** SEÇÃO Tela de contato******************/
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #B5B5B5;
+    border-radius: 5px;
+    font-size: 15px;
+    height: 3vh;
+
+}
+
+.secao-formulario {
+    height: auto;
+    padding: 50px 20px;
+    background-color: #F5F5F5;
+}
+
+.email-button:hover {
+    background-color: #9D4D06;
+    transform: scale(1.01);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.email-button {
+    background-color: #9D4D06;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #169D06;
+    transform: scale(1.01);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-button {
+    background-color: #169D06;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.imagem-esquerda {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    padding: 3%;
+
+}
+
+.image-foguete {
+    margin: 3vh;
+    width: 20vh;
+    height: 20vh;
+}
+
+.texto-secao-formulario {
+    margin-bottom: 30px;
+    font-size: 46px;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.formulario-grade {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.esquerda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.direta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    width: 60%;
+}
+
+.box {
+    width: 65%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 30px 45px;
+    background: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #4f4e4e;
+    font-size: 24;
+
+}
+
+input:focus {
+    outline: none;
+    border-color: #9D4D06;
+}
+
+@media (width < 800px) {
+    .formulario-grade {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .esquerda {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .direta {
+        width: 100%;
+    }
+
+    .whatsapp-button {
+        font-size: 20px;
+    }
+
+    .email-button {
+        font-size: 20px;
+
+    }
+
+    .texto-secao-formulario {
+        margin-bottom: 30px;
+        font-size: 36px;
+        text-align: center;
+    }
+
+
+
+
+}
+
+/************************************************/
 
 @media (width < 468px) {
 
