@@ -1,4 +1,4 @@
-/*************************Mardar WhatsApp***********************************/
+/*************************Mandar WhatsApp***********************************/
 function sendWhatsApp() {
     event.preventDefault();
     const nome = document.getElementById('nome').value.trim();
@@ -19,12 +19,12 @@ function sendWhatsApp() {
     const whatsappUrl = `https://api.whatsapp.com/send?phone=554499999999&text=${encodeURIComponent(mensagem)}`;
     window.open(whatsappUrl, '_blank');
 }
-/*************************Mardar WhatsApp***********************************/
+/*************************Mandar WhatsApp***********************************/
 
 
 
 
-/*************************Mardar email***********************************/
+/*************************Mandar email***********************************/
 
 function sendEmail() {
     event.preventDefault();
