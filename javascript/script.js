@@ -1,13 +1,22 @@
-
 /*************************Mardar WhatsApp***********************************/
 function sendWhatsApp() {
-    console.log("entrou")
-    const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
-    const telefone = document.getElementById('telefone').value;
-    const nome_empresa = document.getElementById('nome_empresa').value;
+    event.preventDefault();
+    const nome = document.getElementById('nome').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const telefone = document.getElementById('telefone').value.trim();
+    const nome_empresa = document.getElementById('nome-empresa').value.trim();
+
+    if (!nome || !email || !telefone || !nome_empresa) {
+        Swal.fire({
+            icon: "warning",
+            title: "Atenção",
+            text: "Por favor, preencha todos os campos antes de enviar a mensagem."
+        });
+        return;
+    }
+
     const mensagem = `Nome: ${nome}\nEmail: ${email}\nTelefone: ${telefone}\nNome da empresa: ${nome_empresa}`;
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=554499907886&text=${encodeURIComponent(mensagem)}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=554499999999&text=${encodeURIComponent(mensagem)}`;
     window.open(whatsappUrl, '_blank');
 }
 /*************************Mardar WhatsApp***********************************/
@@ -19,13 +28,20 @@ function sendWhatsApp() {
 
 function sendEmail() {
     event.preventDefault();
-    const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
-    const telefone = document.getElementById('telefone').value;
-    const nome_empresa = document.getElementById('nome_empresa').value;
-    console.log(nome_empresa);
+    const nome = document.getElementById('nome').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const telefone = document.getElementById('telefone').value.trim();
+    const nome_empresa = document.getElementById('nome-empresa').value.trim();
+
+    if (!nome || !email || !telefone || !nome_empresa) {
+        Swal.fire({
+            icon: "warning",
+            title: "Atenção",
+            text: "Por favor, preencha todos os campos antes de enviar a mensagem."
+        });
+        return;
+    }
     const mensagem = `Nome: ${nome}\nEmail: ${email}\nTelefone: ${telefone}\nNome da empresa: ${nome_empresa}`;
-    console.log(mensagem);
     const url = 'https://onixx-email-service.onrender.com/enviar-mensagem';
     const dados = {
         "mensagem": mensagem,
@@ -50,15 +66,27 @@ function sendEmail() {
         })
         .then(data => {
             console.log('Resposta da API:', data);
-            alert('Mensagem enviada! Resposta: ' + data);
+
+            Swal.fire({
+                title: "Tudo certo!",
+                text: data,
+                icon: "success"
+            });
+
         })
         .catch(error => {
             console.error('Erro:', error);
-            alert('Ocorreu um erro ao enviar a mensagem: ' + error.message);
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "algo deu errado! tente novamente mais tarde.",
+                //text: error.message,
+
+            });
         });
 
 }
-/*************************Mardar email***********************************/
+/****************************************************************************/
 
 
 /*************************mascara telefone***********************************/
@@ -91,3 +119,44 @@ document.addEventListener("DOMContentLoaded", function () {
 /*************************mascara telefone***********************************/
 
 
+
+fetch('json/faq.json')
+    .then(resp => resp.json())
+    .then(faqs => {
+        const faqContainer = document.getElementById('faq-container');
+
+        faqs.forEach(faq => {
+            const faqItem = document.createElement('div');
+            faqItem.classList.add('faq-item');
+
+            const pergunta = document.createElement('h4');
+            pergunta.textContent = faq.pergunta;
+
+            const icon = document.createElement('i');
+            icon.classList.add('ri-arrow-down-s-line');
+
+            pergunta.addEventListener('click', () => {
+                faqItem.classList.toggle('active');
+
+                if (faqItem.classList.contains('active')) {
+                    icon.classList.remove('ri-arrow-down-s-line');
+                    icon.classList.add('ri-arrow-up-s-line');
+                } else {
+                    icon.classList.remove('ri-arrow-up-s-line');
+                    icon.classList.add('ri-arrow-down-s-line');
+                }
+            });
+
+            pergunta.appendChild(icon);
+
+            const resposta = document.createElement('p');
+            resposta.textContent = faq.resposta;
+
+            faqItem.appendChild(pergunta);
+            faqItem.appendChild(resposta);
+            faqContainer.appendChild(faqItem);
+        });
+    })
+    .catch(e => {
+        console.error('Erro ao carregar o arquivo JSON:', error);
+    });
