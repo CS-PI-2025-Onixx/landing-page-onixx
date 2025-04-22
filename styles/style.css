@@ -297,7 +297,7 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
 /*SOLUÇÃO*/
 
 .secao-solucao {
-    padding-bottom: 5%;
+    padding: 30px;
     background-color: #F5F5F5;
 }
 
@@ -314,7 +314,6 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
     gap: 40px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
-    align-items: center;
 }
 
 .titulo {
@@ -600,7 +599,7 @@ footer h3 {
 
 .solucao-cartao {
     padding: 30px 25px;
-
+    text-align: center;
     border-radius: 10px;
     box-shadow: 2px 2px 10px #4f4e4e;
 }
