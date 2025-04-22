@@ -316,7 +316,7 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
     justify-content: center;
 }
 
-.titulo {
+.titulo-equipe {
     margin-bottom: 30px;
     font-size: 30px;
     font-weight: 700;
@@ -325,7 +325,7 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
 
 
 
-.equipe_texto {
+.equipe-texto {
     margin: 20px 0 100px;
     text-align: justify;
     padding: 0 100px 0 100px;
@@ -333,14 +333,14 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
 }
 
 
-.imagemOnixx {
+.imagem-onixx {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.imagemOnixx img {
+.imagem-onixx img {
     width: 100%;
     max-width: 100px;
     display: block;
@@ -348,7 +348,7 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
 }
 
 
-.secao_equipe {
+.secao-equipe {
     padding: 50px 20px;
     background-color: #D9D9D9;
     display: flex;
@@ -388,7 +388,7 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
     box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
 }
 
-.orangecircle {
+.circulo-laranja {
     width: 96vh;
     height: 95vh;
     top: 7vh;
@@ -401,7 +401,7 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
     border-style: solid;
 }
 
-.blackcircle {
+.circulo-preto {
     width: 90vh;
     height: 130vh;
     top: 8.5vh;
@@ -414,7 +414,7 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
     border-style: solid;
 }
 
-.white {
+.branco {
     width: 110vh;
     height: 100vh;
     top: 52vh;
@@ -426,7 +426,7 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
     border-style: solid;
 }
 
-.imagem {
+.imagem-perfil {
     background-color: aliceblue;
     border-radius: 50%;
     display: flex;
@@ -443,7 +443,7 @@ O PROBLEMA DO HEADER MOBILE NAO FICAR LOGO EM CIMA DE MENU ESTÁ AQUI!
     overflow: hidden;
 }
 
-.imagem img {
+.imagem-perfil img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -513,9 +513,41 @@ ul {
     width: 100%;
 }
 
-.textocard {
+.texto-card {
     margin: 50px;
     margin-top: 0px;
+}
+
+@media (width < 468px) {
+
+    .equipe-texto {
+        margin: 20px 0 50px;
+        text-align: justify;
+        padding: 0 10px 0 10px;
+        text-indent: 60px;
+    }
+
+    .sociais {
+        left: 7vh;
+    }
+
+    .redes img {
+        width: 3vh;
+        height: 2vh;
+        margin-top: 5px;
+    }
+
+}
+
+@media (width < 376px) {
+    .nome p {
+        margin-top: 4vh;
+        width: 100%;
+    }
+
+    .sociais {
+        left: 1vh;
+    }
 }
 
 /****************** SEÇÃO Rodapé******************/
@@ -546,6 +578,186 @@ footer h3 {
     color: #9D4D06;
 }
 
+/****************** SEÇÃO Tela de contato******************/
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #B5B5B5;
+    border-radius: 5px;
+    font-size: 15px;
+    height: 3vh;
+
+}
+
+.secao-formulario {
+    height: auto;
+    padding: 50px 20px;
+    background-color: #F5F5F5;
+}
+
+.email-button:hover {
+    background-color: #9D4D06;
+    transform: scale(1.01);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.email-button {
+    background-color: #9D4D06;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #169D06;
+    transform: scale(1.01);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-button {
+    background-color: #169D06;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.imagem-esquerda {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    padding: 3%;
+
+}
+
+.image-foguete {
+    margin: 3vh;
+    width: 20vh;
+    height: 20vh;
+}
+
+.texto-secao-formulario {
+    margin-bottom: 30px;
+    font-size: 46px;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.formulario-grade {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.esquerda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.direta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    width: 60%;
+}
+
+.box {
+    width: 65%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 30px 45px;
+    background: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #4f4e4e;
+    font-size: 24;
+
+}
+
+input:focus {
+    outline: none;
+    border-color: #9D4D06;
+}
+
+@media (width < 800px) {
+    .formulario-grade {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .esquerda {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .direta {
+        width: 100%;
+    }
+
+    .whatsapp-button {
+        font-size: 20px;
+    }
+
+    .email-button {
+        font-size: 20px;
+
+    }
+
+    .texto-secao-formulario {
+        margin-bottom: 30px;
+        font-size: 36px;
+        text-align: center;
+    }
+
+
+
+
+}
+
+/************************************************/
 
 @media (width < 468px) {
 
@@ -577,13 +789,13 @@ footer h3 {
 
 }
 
-/****************** SEÇÃO PLANO E PREÇO ******************/
-.secao_plano {
+/****************** SEÇÃO E PREÇO ******************/
+.secao-plano {
     padding: 50px 20px;
     background-color: #D9D9D9;
 }
 
-.plano_grade {
+.plano-grade {
     margin-top: 20px;
     display: grid;
     gap: 60px;
@@ -604,12 +816,12 @@ footer h3 {
     box-shadow: 2px 2px 10px #4f4e4e;
 }
 
-.plano_cartao {
+.plano-cartao {
     padding: 30px 25px;
-
     border-radius: 10px;
     box-shadow: 2px 2px 10px #4f4e4e;
 }
+
 
 .solucao-cartao span {
     display: inline-block;
@@ -623,25 +835,25 @@ footer h3 {
     font-weight: 700;
 }
 
-.plano_cartao h4 {
+.plano-cartao h4 {
     margin-bottom: 10px;
     font-size: 25px;
 }
 
 
 
-.plano_preco {
+.plano-preco {
     margin-top: 25px;
     font-size: 25px;
 }
 
-.plano_agendar {
+.plano-agendar {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.plano_agendar button {
+.plano-agendar button {
     background-color: #9D4D06;
     color: #ffffff;
     border: none;
@@ -652,31 +864,27 @@ footer h3 {
     cursor: pointer;
 }
 
-.plano_agendar a {
+.plano-agendar a {
     text-decoration: none;
     color: #ffffff;
 }
 
-.plano_funcionalidade {
+.plano-funcionalidade {
     margin-top: 20px;
 }
 
-.plano_funcionalidade span {
+.plano-funcionalidade span {
     display: block;
     padding-top: 9px;
 }
 
-.plano_funcionalidade i {
+.plano-funcionalidade i {
     margin-right: 10px;
 }
 
-.plano_aviso {
+.plano-aviso {
     margin-top: 50px;
     text-align: center;
-}
-
-.plano_aviso p {
-    margin: 0 100px 0 100px;
 }
 
 .ri-checkbox-circle-fill {
@@ -691,4 +899,48 @@ footer h3 {
     color: #DFA700;
     font-size: 30px;
 
+}
+
+
+/****************** SEÇÃO FAQ ******************/
+.secao-faq {
+    padding: 50px 20px;
+    background-color: #F5F5F5;
+}
+
+.faq-subtitulo {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.faq-item {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #494848;
+}
+
+.faq-item h4 {
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-item i {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.faq-item p {
+    display: none;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.faq-item.active p {
+    display: block;
 }
