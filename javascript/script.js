@@ -1,3 +1,10 @@
+document.getElementById('btn-contato').addEventListener('click', function () {
+    const contato = document.getElementById('contato');
+    if (contato) {
+        contato.scrollIntoView({ behavior: 'smooth' });
+    }
+});
+
 /*************************Mandar WhatsApp***********************************/
 function sendWhatsApp() {
     event.preventDefault();
